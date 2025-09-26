@@ -137,6 +137,3 @@ Vite will run at: [http://localhost:5173](http://localhost:5173)
 
 Open frontend URL and start chatting. AI will respond using your knowledge base and web search results (if enabled).
 
----
-
-If you want, I can also **add a “Features” section and Technologies Used section** to make it fully match professional GitHub repo style.
