@@ -1,100 +1,142 @@
-# 🧠 **AI Chat + Knowledge Base App**
 
-This project is a full-stack application for chatting with an AI (powered by OpenAI/Gemini) with optional knowledge base and live web search via SerpAPI.
 
-Note: Make sure that both backend and frontend folder have a .env in the root.
+# AI Chat + Knowledge Base App
 
-## 🏗️ **Architecture**
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.101.0-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://reactjs.org/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-0.4.0-orange)](https://www.trychroma.com/)
 
-**Backend:** FastAPI (Python) with ChromaDB for vector storage
+A full-stack application to chat with an AI (powered by Gemini/OpenAI), integrated with a knowledge base and optional live web search via SerpAPI.
 
+> Ensure both backend and frontend folders have a `.env` file in their root.
+
+---
+
+## Architecture
+
+**Backend:** FastAPI (Python) + ChromaDB for vector storage
 **Frontend:** React (Vite) for chat UI
 
-## 🚀 **Setup Instructions**
+**Flow:**
 
-### 1. **Clone the Repository**
+1. User sends query from React frontend
+2. Backend checks knowledge base and optionally SerpAPI
+3. AI (Gemini/OpenAI) responds with combined context
+
+---
+
+## Setup Instructions
+
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/siwamsingh/AI-Workflow.git
+git clone https://github.com/sakshitiwarim5/AI_workflow.git
+cd AI_workflow
 ```
 
-## ⚙️ **Backend (FastAPI)**
+---
 
-### 2. 🐍 **Create and Activate Virtual Environment**
+## Backend Setup (FastAPI)
+
+### 2. Create & Activate Virtual Environment
 
 ```bash
-# Move into backend folder
 cd backend
-
-# Install virtual enviroment
 python -m venv .venv
 
-# Mac/Linux
-source .venv/bin/activate
+# Activate
 # Windows
 .venv\Scripts\activate
+# Mac/Linux
+source .venv/bin/activate
 ```
 
-### 3. 📦 **Install Dependencies**
+---
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. 🔑 **Configure Environment Variables**
+---
 
-Create a `.env` file inside the backend root directory and add:
+### 4. Configure Environment Variables
+
+Create a `.env` file in the backend folder:
 
 ```text
 DATABASE_URL=your_database_url_here
 OPENAI_API_KEY=your_openai_api_key_here
-SERPAPI_KEY=your_serpapi_key_here
 GEMINI_API_KEY=your_gemini_api_key_here
+SERPAPI_KEY=your_serpapi_key_here
 CHROMA_PERSIST_DIR=./chroma_persist
 ```
 
-### 5. 🚦 **Run the Backend**
+---
 
-Start the server on port 8000:
+### 5. Run Backend
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-Your FastAPI server is now running at:
-👉 **http://localhost:8000**
+Server will be available at: [http://localhost:8000](http://localhost:8000)
 
-## 💻 **Frontend (React + Vite)**
+---
 
-### 6. 📦 **Install Dependencies**
+## Frontend Setup (React + Vite)
 
-From the `frontend/` folder:
+### 6. Install Dependencies
 
 ```bash
+cd frontend
 npm install
 ```
 
-### 7. 🔑 **Configure Environment Variables**
+---
 
-Inside the frontend root, create a `.env` file and add:
+### 7. Configure Environment Variables
+
+Create a `.env` file in the frontend folder:
 
 ```text
 VITE_SERVER_URL="http://localhost:8000"
 ```
 
-### 8. 🚦 **Run the Frontend**
+---
+
+### 8. Run Frontend
 
 ```bash
 npm run dev
 ```
 
-By default, Vite runs at:
-👉 **http://localhost:5173**
+Vite will run at: [http://localhost:5173](http://localhost:5173)
 
-## ✅ **Final Check**
+---
 
-- **Backend running on:** http://localhost:8000
-- **Frontend running on:** http://localhost:5173
-- Both `.env` files are configured correctly
+## Screenshots
 
-Now open the frontend URL, start chatting, and the AI should respond with context from your knowledge base & web search results (if enabled)! 
+**Frontend Chat UI:**
+![Chat UI Screenshot](./docs/frontend-screenshot.png)
+
+**AI Response Example:**
+![AI Response Screenshot](./docs/ai-response.png)
+
+> Replace with your actual screenshots inside a `docs/` folder in your repo.
+
+---
+
+## Final Check
+
+- Backend: [http://localhost:8000](http://localhost:8000)
+- Frontend: [http://localhost:5173](http://localhost:5173)
+- `.env` files are correctly configured
+
+Open frontend URL and start chatting. AI will respond using your knowledge base and web search results (if enabled).
+
+---
+
+If you want, I can also **add a “Features” section and Technologies Used section** to make it fully match professional GitHub repo style.
