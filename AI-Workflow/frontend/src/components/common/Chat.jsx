@@ -135,12 +135,7 @@ function ChatWithAI({ open, setOpen, setModelData, apiEndpoint, params }) {
         {/* Message List with doodle background */}
         <div
           className="flex-1 overflow-y-auto px-4 py-2 space-y-2 relative  "
-          // style={{
-          //   backgroundImage: `url(${Doodle})`,
-          //   backgroundRepeat: "repeat", // or "no-repeat"
-          //   backgroundSize: "cover", // use "150px" if you want tiled look
-          //   backgroundPosition: "center",
-          // }}
+        
         >
           {messages.length === 0 && (
             <div className="absolute inset-0 flex gap-2 items-center justify-center pointer-events-none">

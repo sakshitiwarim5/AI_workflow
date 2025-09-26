@@ -10,8 +10,10 @@ function Navbar() {
         </div>
         <div className="font-semibold text-[16px]">GenAI Stack</div>
       </div>
-      <div className="h-6 w-6 rounded-full text-white font-bold font-mono bg-pink-400 flex items-center justify-center text-center">
-        S
+      <div className="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center shadow-lg hover:bg-blue-600 transition-colors duration-200">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-white to-yellow-200 font-extrabold text-lg font-serif tracking-wider">
+          ST
+        </span>
       </div>
     </nav>
   );
