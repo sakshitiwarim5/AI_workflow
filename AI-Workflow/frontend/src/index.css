@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body{
+  background-color: whitesmoke;
+}
+
+.markdown {
+  line-height: 1.6;
+}
+
+.markdown ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.markdown strong {
+  font-weight: bold;
+}

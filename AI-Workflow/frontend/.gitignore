@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node modules
+node_modules/
+
+*.pem
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# TypeScript build files
+dist/
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+*.swp
+.idea/
+*.iml
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.log
+
+# Coverage directory (for testing frameworks like Jest)
+coverage/
+
+# Optional lockfiles (if you use npm or yarn in the backend)
+package-lock.json
+yarn.lock

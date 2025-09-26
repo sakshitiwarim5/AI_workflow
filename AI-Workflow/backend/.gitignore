@@ -1,0 +1,46 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# ChromaDB persistence
+chroma_persist/
+
+# Database (if local sqlite etc.)
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# ---- Node / React ----
+node_modules/
+dist/
+build/
+
+# Local dev
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+
+# Vite cache
+.vite/
