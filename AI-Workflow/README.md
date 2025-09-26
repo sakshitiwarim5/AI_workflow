@@ -115,19 +115,6 @@ npm run dev
 
 Vite will run at: [http://localhost:5173](http://localhost:5173)
 
----
-
-## Screenshots
-
-**Frontend Chat UI:**
-![Chat UI Screenshot](./docs/frontend-screenshot.png)
-
-**AI Response Example:**
-![AI Response Screenshot](./docs/ai-response.png)
-
-> Replace with your actual screenshots inside a `docs/` folder in your repo.
-
----
 
 ## Final Check
 
