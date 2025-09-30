@@ -40,17 +40,12 @@ function KnowledgeBaseNode({ data }) {
         const result = await response.json();
 
         console.log(result);
-        
 
         setLocalFileName(file.name);
         setDocId(result.doc_id);
 
         // save doc_id + fileName to node data
-        data.onFileUpload &&
-          data.onFileUpload([
-            file.name,
-            result.doc_id,
-          ]);
+        data.onFileUpload && data.onFileUpload([file.name, result.doc_id]);
       } catch (err) {
         console.error("Upload error:", err);
         alert("File upload failed. Please try again.");
@@ -134,7 +129,7 @@ function KnowledgeBaseNode({ data }) {
           value={data.embeddingModel}
           onChange={data.onEmbeddingChange}
         >
-          <option value="text-embedding-3-large">Gemini-flash-1</option>
+          <option value="text-embedding-3-large">Gemini-flash-2.5</option>
         </select>
       </div>
 
